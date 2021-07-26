@@ -1,0 +1,76 @@
+.filter__list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+	padding-bottom: 6rem;
+}
+
+.filter__item {
+	width: 100%;
+	padding: 1.2rem 1.2rem;
+	background-color: #19202e;
+}
+
+.filter__item-image-btn {
+	display: block;
+	width: inherit;
+	height: 400px;
+	overflow: hidden;
+	position: relative;
+}
+
+.filter__item-image-btn a {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.filter__item-image-btn img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+.filter__item-image-btn:hover img {
+	transform: scale(1.1);
+}
+
+.filter__buttons {
+	width: 70%;
+	margin: 3rem auto;
+	text-align: center;
+}
+
+.filter__btn {
+	padding: 0.5rem 2rem;
+	background-color: #0c3564;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.filter__btn:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.filter__btn:hover {
+	background-color: #037fff;
+	cursor: pointer;
+}
+
+.filter__btn:active,
+.filter__btn:focus {
+	outline: none;
+	border: none;
+}
